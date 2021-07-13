@@ -1,0 +1,225 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>FreeWheel HTML5 Demo Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"/>
+    <script type="text/javascript" src="http://adm.fwmrm.net/libs/adm/6.32.0/AdManager.js"></script>
+    <script type="text/javascript" src="player.js"></script>
+    <style type="text/css">
+        #standaloneContainer {
+            margin-top: 20px;
+        }
+    	#videoPlayer {
+    		height: 480px;
+    		width: 100%;
+    		background-color: #000;
+    	}
+        .navbar a{
+            margin: 5px;
+        }
+        footer{
+            padding: 10px;
+            text-align: right;
+        }
+        footer, footer a{
+            font-size: small;
+            color: #ccc;
+        }
+    </style>
+		<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = 'syl20ansart.github.io';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', '9kUtHZdbrLNe-', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+  makeStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) v2-->
+  </head>
+  <body>
+    <div class="navbar navbar-static-top">
+        <a class="navbar-brand" href="/#" style="padding-left: 173px; background: url(http://www.freewheel.tv/images/site/lgo-fw-header.png) 10px no-repeat">HTML5 Demo Player</a>
+    </div>
+    <div style="margin: 20px">
+        <div class="row">
+        	<div class="col-lg-6" id="leftPanel">
+        		<div id="displayBase">
+	        		<video id="videoPlayer">
+                        <source src="http://mirrors.standaloneinstaller.com/video-sample/lion-sample.m4v"/>
+	        		</video>
+                    <div>
+                        <button id="start" class="btn btn-info" style="width: 100%;" disabled>Play</button>
+                    </div>
+	        	</div>
+        		<div id="standaloneContainer">
+                    <p>Standalone 728x90</p>
+                    <span id="standaloneSlot" class="_fwph" >
+                        <form id="_fw_form_standaloneSlot" style="display:none">
+                            <input type="hidden" name="_fw_input_standaloneSlot" id="_fw_input_standaloneSlot" value="ptgt=p&amp;h=90&amp;w=728&amp;flag=+cmpn+fcai">
+                        </form>
+                        <span id="_fw_container_standaloneSlot"></span>
+                    </span>
+                </div>
+        	</div> <!-- col-lg-6 -->
+        	<div class="col-lg-6">
+        		<div id="companionContainer">
+                    <p>Companion 300x250</p>
+                    <span id="companionSlot" class="_fwph" >
+                        <form id="_fw_form_companionSlot" style="display:none">
+                            <input type="hidden" name="_fw_input_companionSlot" id="_fw_input_companionSlot" value="ptgt=p&amp;h=250&amp;w=300">
+                        </form>
+                        <span id="_fw_container_companionSlot"><!-- COMPANION_SLOT_1 --></span>
+                    </span>
+                </div>
+        	</div>
+        </div>
+    </div>
+    <footer>&copy; 2013 <a href="http://freewheel.tv" target="_blank">FreeWheel Media Inc.</a></footer>
+	<script type="text/javascript">
+    $(function() {
+    	var player = new tv.freewheel.DemoPlayer();
+    	player.requestAds();
+    	$('#start').bind('click', function(evt){
+            $("#start").attr('disabled', true);
+    		player.playback();
+    	});
+    });
+    </script>
+  </body>
+</html>
