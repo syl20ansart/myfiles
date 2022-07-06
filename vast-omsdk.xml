@@ -1,0 +1,67 @@
+<VAST version="3.0">
+	<Ad id="AdswizzAd813101602">
+		<InLine>
+			<AdSystem>Adswizz</AdSystem>
+			<AdTitle>
+<![CDATA[ caprice-capture interstitiel ]]></AdTitle>
+			<Description>
+<![CDATA[ caprice-capture interstitiel ]]></Description>
+			<Error>
+<![CDATA[ https://ads.stickyadstv.com/error-tracking/?adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=483680&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&errorCode=[ERRORCODE]& ]]></Error>
+			<Impression id="813101602">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsDisplayStarted&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=8582194&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&ibpiv=afc24d2a63863a74df7dc5162d85e21e&listenerId=384e36985a890c39a548f38ef19f2&ibp=33b65c3a69614d0345abf85846eaa4f6f4019a7f9709a8acb5426fbc0e5b5f154d287fb1099baa3708ee6f6234e0afed&campaignId=270638385& ]]></Impression>
+			
+			<Impression id="user-sync-813101602-1">
+<![CDATA[ https://ads.stickyadstv.com/auto-user-sync?px=19&listenerId=384e36985a890c39a548f38ef19f2 ]]></Impression>
+			<Creatives>
+				<Creative id="813101602"
+				          sequence="1">
+					<Linear>
+						<Duration>00:00:30</Duration>
+						<TrackingEvents>
+							<Tracking event="start">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsSendReport&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=476241&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&ibpiv=afc24d2a63863a74df7dc5162d85e21e&displayPercentage=0&time=0&tagsArray=&ibp=33b65c3a69614d0345abf85846eaa4f6f4019a7f9709a8acb5426fbc0e5b5f154d287fb1099baa3708ee6f6234e0afed& ]]></Tracking>
+							<Tracking event="firstQuartile">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsSendReport&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=8767060&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&ibpiv=afc24d2a63863a74df7dc5162d85e21e&displayPercentage=25&time=7&tagsArray=&ibp=33b65c3a69614d0345abf85846eaa4f6f4019a7f9709a8acb5426fbc0e5b5f154d287fb1099baa3708ee6f6234e0afed& ]]></Tracking>
+							<Tracking event="midpoint">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsSendReport&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=9272461&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&ibpiv=afc24d2a63863a74df7dc5162d85e21e&displayPercentage=50&time=15&tagsArray=&ibp=33b65c3a69614d0345abf85846eaa4f6f4019a7f9709a8acb5426fbc0e5b5f154d287fb1099baa3708ee6f6234e0afed& ]]></Tracking>
+							<Tracking event="thirdQuartile">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsSendReport&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=805905&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&ibpiv=afc24d2a63863a74df7dc5162d85e21e&displayPercentage=75&time=22&tagsArray=&ibp=33b65c3a69614d0345abf85846eaa4f6f4019a7f9709a8acb5426fbc0e5b5f154d287fb1099baa3708ee6f6234e0afed& ]]></Tracking>
+							<Tracking event="complete">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsDisplayEnd&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=4480698&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&ibpiv=afc24d2a63863a74df7dc5162d85e21e&displayPercentage=100&time=30&tagsArray=&ibp=33b65c3a69614d0345abf85846eaa4f6f4019a7f9709a8acb5426fbc0e5b5f154d287fb1099baa3708ee6f6234e0afed& ]]></Tracking>
+						</TrackingEvents>
+						<AdParameters>
+<![CDATA[ <Extensions> <Extension type="Hedgehog" /> <Extension type='StickyBrand'><Domain>battlefield.com</Domain><Sector>INDUSTRY</Sector><Advertiser>Test</Advertiser><Brand>Test</Brand></Extension><Extension type='StickyPricing'><Price currency="EUR">1.0000</Price></Extension><Extension type="StickyViewability">https://ads.stickyadstv.com/viewability-tracking/?adId=813101602&amp;viewKey=1657112981308017-543&amp;sessionId=ab82ef8488d3d1b19c14966012d514&amp;zoneId=2003&amp;impId=1&amp;cb=8063319&amp;trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&amp;state=[viewabilityState]&amp;percentViewable=[percent]&amp;focus=[focus]&amp;ibpiv=afc24d2a63863a74df7dc5162d85e21e&amp;ibp=33b65c3a69614d0345abf85846eaa4f6f4019a7f9709a8acb5426fbc0e5b5f154d287fb1099baa3708ee6f6234e0afed&amp;</Extension><Extension type='MOAT'><Partner>stickyadsjsint111745259950</Partner><PX>19</PX><Publisher>1101</Publisher><Site>457</Site><Zone>2003</Zone><Campaign>270638385</Campaign></Extension><Extension type="AdVerifications"><AdVerifications><Verification vendor="iabtechlab.com-omid"><JavaScriptResource apiFramework="omid" browserOptional="true">https://s3-us-west-2.amazonaws.com/omsdk-files/compliance-js/omid-validation-verification-script-v1-FREEWHEELTV-11082021.js</JavaScriptResource><VerificationParameters>iabtechlab-Freewheeltv</VerificationParameters></Verification></AdVerifications></Extension></Extensions> ]]></AdParameters>
+						<VideoClicks>
+							<ClickThrough id="813101602">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsClickThrough&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=4086091&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&url=https%3A%2F%2Fbs.serving-sys.com%2Fserving%2FadServer.bs%3Fcn%3Dtrd%26mc%3Dclick%26pli%3D23618274%26PluID%3D0%26ord%3D%255Btimestamp%255D& ]]></ClickThrough>
+							<CustomClick id="813101602">
+<![CDATA[ https://ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsClicked&adId=813101602&viewKey=1657112981308017-543&sessionId=ab82ef8488d3d1b19c14966012d514&zoneId=2003&impId=1&cb=8663085&trackingIds=28161297%2C28161329%2C29847601%2C29967745%2C61392385%2C98035954&clickX=[clickX]&clickY=[clickY]&time=[timestamp]&tagsArray=& ]]></CustomClick>
+						</VideoClicks>
+						<MediaFiles>
+							<MediaFile delivery="progressive"
+							           bitrate="672"
+							           width="368"
+							           height="276"
+							           type="video/mp4"
+							           scalable="true"
+							           maintainAspectRatio="true">
+<![CDATA[ https://cdn.stickyadstv.com/www/images/813101602-web-MP4-5a6b22dca2f41.mp4 ]]></MediaFile>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+			</Creatives>
+			<Extensions>
+				<Extension type="AdVerifications">
+					<AdVerifications>
+						<Verification vendor="FreeWheel">
+							<JavaScriptResource apiFramework="omid" browserOptional="true">
+<![CDATA[https://s3-us-west-2.amazonaws.com/omsdk-files/compliance-js/omid-validation-verification-script-v1-ssl.js]]>
+							</JavaScriptResource>
+						</Verification>
+					</AdVerifications>
+				</Extension>
+			</Extensions>
+		</InLine>
+	</Ad>
+</VAST>
