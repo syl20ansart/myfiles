@@ -1,0 +1,27 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0">
+<Ad id="ABC78942A567">
+<InLine>
+<AdSystem>adgatewayhey</AdSystem>
+<AdTitle>TEST-SA</AdTitle>
+<Impression/>
+<Creatives>
+<Creative id="ABC78942A567">
+<Linear>
+<Duration>00:00:15</Duration>
+<TrackingEvents/>
+<VideoClicks>
+<ClickThrough>
+<![CDATA[ https://www.audiencexpress.com ]]>
+</ClickThrough>
+</VideoClicks>
+<MediaFiles>
+<MediaFile delivery="progressive" type="video/webm" width="1920" height="1080" bitrate="1367" scalable="true" maintainAspectRatio="true">
+<![CDATA[ https://s1.adform.net/banners/elements/files/2068806/16477911.webm?bv=6 ]]>
+</MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
